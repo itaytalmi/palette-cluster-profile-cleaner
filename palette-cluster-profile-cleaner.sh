@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #############################################################################
-# Palette Cluster Profile Cleanup Script
+# Spectro Cloud Palette Cluster Profile Cleaning Tool
 #############################################################################
 # This script helps manage unused cluster profile versions by:
 # - Discovering unused cluster profile versions (not used by any clusters)
