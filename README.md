@@ -1,4 +1,4 @@
-# Cluster Profile Cleanup Script
+# Spectro Cloud Palette Cluster Profile Cleaning Tool
 
 A Bash script to identify and clean up unused cluster profile versions in Spectro Cloud Palette.
 
