@@ -1,0 +1,7 @@
+.DS_Store
+.vscode
+.idea
+
+# Ignore output directory (reports and backups)
+output/
+
