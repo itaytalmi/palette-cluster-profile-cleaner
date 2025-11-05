@@ -130,13 +130,14 @@ export SPECTROCLOUD_APIKEY='your-api-key'
     toly-maas-px-full                        1.0.0             project   some-project   UNUSED   68c81b58b9ac72f7c70c92f2  
     vsphere-profile-test-cp                  1.0.1             tenant    -              IN USE   686f64982b8d5c4e884d5e21  
     vsphere-profile-test-cp-120-132          1.0.1             tenant    -              IN USE   686f7679ef72c1c76ae24c71  
-    cp-maas-px-full                          1.0.0             tenant    -              IN USE   6846ead4bfeff7cdfaa1cc48  
+    cp-maas-px-full                          1.0.0             tenant    -              IN USE   6846ead4bfeff7cdfaa1cc48
+    <Redacted-Output>  
 
     [INFO] ========================================
     [INFO] Summary
     [INFO] ========================================
     [INFO] Total profiles checked: 74
-    [INFO] Unused profiles found: 62
+    [INFO] Unused profiles found: 8
     [INFO] Profiles skipped (out of scope): 1
 
     [SUCCESS] Analysis complete!
