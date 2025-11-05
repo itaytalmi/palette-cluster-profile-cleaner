@@ -18,7 +18,7 @@ sudo apt-get install jq            # Ubuntu/Debian
 
 ```bash
 cd helpers/unused-cluster-profile-cleanup/
-chmod +x cleanup-unused-cluster-profile-versions.sh
+chmod +x palette-cluster-profile-cleaner.sh
 export SPECTROCLOUD_APIKEY='your-api-key'
 ```
 
@@ -33,16 +33,16 @@ export SPECTROCLOUD_APIKEY='your-api-key'
 
 ```bash
 # Analyze all profiles
-./cleanup-unused-cluster-profile-versions.sh analyze
+./palette-cluster-profile-cleaner.sh analyze
 
 # Analyze with CSV export
-./cleanup-unused-cluster-profile-versions.sh analyze --export-csv
+./palette-cluster-profile-cleaner.sh analyze --export-csv
 
 # Cleanup unused profiles (interactive, with backups)
-./cleanup-unused-cluster-profile-versions.sh cleanup
+./palette-cluster-profile-cleaner.sh cleanup
 
 # Cleanup with automated confirmation (for scripts/automation)
-./cleanup-unused-cluster-profile-versions.sh cleanup --confirm-all
+./palette-cluster-profile-cleaner.sh cleanup --confirm-all
 ```
 
 ### Options
@@ -65,29 +65,29 @@ export SPECTROCLOUD_APIKEY='your-api-key'
 ### Example 1: Analyze Specific Project
 
 ```bash
-./cleanup-unused-cluster-profile-versions.sh analyze --project my-project
+./palette-cluster-profile-cleaner.sh analyze --project my-project
 ```
 
 ### Example 2: Analyze Specific Profile
 
 ```bash
 # Tenant-scoped profile
-./cleanup-unused-cluster-profile-versions.sh analyze --profile eks-full-prod
+./palette-cluster-profile-cleaner.sh analyze --profile eks-full-prod
 
 # Project-scoped profile
-./cleanup-unused-cluster-profile-versions.sh analyze --profile vsphere-addons-dev --project my-project
+./palette-cluster-profile-cleaner.sh analyze --profile vsphere-addons-dev --project my-project
 ```
 
 ### Example 3: Cleanup with CSV Export (for auditing)
 
 ```bash
-./cleanup-unused-cluster-profile-versions.sh cleanup --export-csv
+./palette-cluster-profile-cleaner.sh cleanup --export-csv
 ```
 
 ### Example 4: Automated Cleanup (CI/CD)
 
 ```bash
-./cleanup-unused-cluster-profile-versions.sh cleanup --confirm-all --export-csv
+./palette-cluster-profile-cleaner.sh cleanup --confirm-all --export-csv
 ```
 
 ## How It Works
@@ -264,12 +264,12 @@ sudo apt-get install jq  # Linux
 export SPECTROCLOUD_APIKEY='your-api-key'
 
 # 2. Analyze (safe, no changes)
-./cleanup-unused-cluster-profile-versions.sh analyze
+./palette-cluster-profile-cleaner.sh analyze
 
 # 3. Review results in the table output
 
 # 4. Cleanup with backups
-./cleanup-unused-cluster-profile-versions.sh cleanup
+./palette-cluster-profile-cleaner.sh cleanup
 ```
 
 That's it! The script will guide you through the rest.
