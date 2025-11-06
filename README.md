@@ -149,7 +149,6 @@ export SPECTROCLOUD_APIKEY='your-api-key'
 4. **Cleanup mode**: Shows warnings, prompts for confirmation, backs up profiles, then deletes unused ones. Example output:
 
     ```text
-    ➜  palette-cluster-profile-cleaner git:(main) ✗ ./palette-cluster-profile-cleaner.sh cleanup --project some-project
     [INFO] Checking prerequisites...
     [SUCCESS] Prerequisites check passed
     [INFO] Audit logging enabled: ./output/audit_20251105_114517.log
